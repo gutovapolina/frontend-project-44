@@ -4,6 +4,9 @@ install:
 brain-games:
 	node bin/brain-games.js
 
+brain-progression:
+	node bin/brain-progression.js
+
 link:
 	npm link
 	
