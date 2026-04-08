@@ -19,3 +19,10 @@
 ### brain-prime
 
 [![brain-prime demo](https://asciinema.org/a/BbRPlfs7CXAx1eab.svg)](https://asciinema.org/a/BbRPlfs7CXAx1eab)
+  
+ ## Проект: Игры разума (JS)
+ **brain-even** - Игра: "Проверка на чётность"
+ **brain-calc** - Игра: "Калькулятор"
+ **brain-gcd** - Игра "НОД"
+ **brain-progression** - Игра "Арифметическая прогрессия"
+ **brain-prime** - Игра "Простое ли число?"
