@@ -3,3 +3,7 @@
 ### brain-even
 
 [![brain-even demo](https://asciinema.org/a/803v6REnOlXvRz9h.svg)](https://asciinema.org/a/803v6REnOlXvRz9h)
+
+### brain-calc
+
+[![brain-calc demo](https://asciinema.org/a/yt84R1NrRfgQjneX.svg)](https://asciinema.org/a/yt84R1NrRfgQjneX)
