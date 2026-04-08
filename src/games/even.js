@@ -1,34 +1,29 @@
-import readlineSync from 'readline-sync'
-import getUserName from '../cli.js'
+import readlineSync from 'readline-sync';
+import getUserName from '../cli.js';
 
-const isEven = num => num % 2 === 0
+const isEven = (num) => num % 2 === 0;
 
 const runEvenGame = () => {
-  const name = getUserName()
-  console.log('Answer "yes" if the number is even, otherwise answer "no".')
+  const name = getUserName();
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-  let correctAnswersCount = 0
-  const maxCorrect = 3
+  let correct = 0;
+  while (correct < 3) {
+    const num = Math.floor(Math.random() * 100) + 1;
+    console.log(`Question: ${num}`);
+    const answer = readlineSync.question('Your answer: ').toLowerCase();
+    const right = isEven(num) ? 'yes' : 'no';
 
-  while (correctAnswersCount < maxCorrect) {
-    const number = Math.floor(Math.random() * 100) + 1
-    console.log(`Question: ${number}`)
-    const answer = readlineSync.question('Your answer: ').trim().toLowerCase()
-
-    const correctAnswer = isEven(number) ? 'yes' : 'no'
-
-    if (answer === correctAnswer) {
-      console.log('Correct!')
-      correctAnswersCount++
-    }
-    else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
-      console.log(`Let's try again, ${name}!`)
-      return
+    if (answer === right) {
+      console.log('Correct!');
+      correct++;
+    } else {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${right}'.`);
+      console.log(`Let's try again, ${name}!`);
+      return;
     }
   }
+  console.log(`Congratulations, ${name}!`);
+};
 
-  console.log(`Congratulations, ${name}!`)
-}
-
-export default runEvenGame
+export default runEvenGame;
