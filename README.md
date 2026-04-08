@@ -7,3 +7,8 @@
 ### brain-calc
 
 [![brain-calc demo](https://asciinema.org/a/yt84R1NrRfgQjneX.svg)](https://asciinema.org/a/yt84R1NrRfgQjneX)
+
+### brain-gcd
+
+[![brain-gcd demo](https://asciinema.org/a/BgdZjuCngOEXhAJz.svg)](https://asciinema.org/a/BgdZjuCngOEXhAJz)
+
